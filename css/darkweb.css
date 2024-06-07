@@ -17,6 +17,7 @@ body {
     height: 50px;
     border-radius: 50px;
     border: 1px solid black;
+    cursor: pointer;
 }
 #switch::after{
     content: "";
@@ -41,4 +42,69 @@ body.active #switch::after {
     background-color: white;
     transform: translate(38px,-50%);
     transition: .3s;
+}
+body.active figure {
+    border-color: white;
+}
+.container-video {
+    width: calc(100% - 40px);
+    max-width: 500px;
+}
+figure, .container-video iframe {
+    display: block;
+    height: 300px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid black;
+}
+figure img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+figure::after,figure::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .3s;
+    z-index: 1;
+}
+figure::before {
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    width: 80px;
+    height: 80px;
+}
+figure::after {
+    width: 0px;
+    height: 0px;
+    left: calc(50% + 5px);
+    border-top: 15px solid transparent;
+    border-left: 30px solid black;
+    border-bottom: 15px solid transparent;
+}
+figure:hover::before {
+    background-color: black;
+}
+figure:hover::after {
+    border-left: 37px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.container-video iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
 }
