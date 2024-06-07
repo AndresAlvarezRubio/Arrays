@@ -65,4 +65,4 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-document.querySelector(".winner").innerHTML = `El ganador es ${ganador} con una puntuación de -> ${puntuacion}`;
+document.querySelector(".winner").innerHTML = `<p>El ganador es ${ganador} con una puntuación de -> ${puntuacion}</p>`;
