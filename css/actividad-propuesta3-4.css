@@ -40,6 +40,10 @@ table {
     border-spacing: 0;
     overflow: scroll;
 }
+.winner {
+    margin-top: 5px;
+    text-align: center;
+}
 tbody {
     display: flex;
     gap: 20px;

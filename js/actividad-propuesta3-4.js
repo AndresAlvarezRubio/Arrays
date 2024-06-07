@@ -47,7 +47,7 @@ for (let i = 0; i < array.length; i++) {
         }
     }
 }
-console.log(`El ganador es ${ganador} con una puntuación de -> ${puntuacion}`);
+
 
 
 
@@ -64,3 +64,5 @@ for (let i = 0; i < array.length; i++) {
 
     }
 }
+
+document.querySelector(".winner").innerHTML = `El ganador es ${ganador} con una puntuación de -> ${puntuacion}`;
