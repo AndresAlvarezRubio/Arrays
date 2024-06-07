@@ -76,22 +76,18 @@ for (let index = 0; index < sitiosBonitos.length; index++) {
 
 //Crear un Array Bidimensional con valores random del 1 al 10.
 //5 filas y 4 columnas
+let arrayFC = new Array(5);
 
-console.log("\nQue te pasa pichon");
+for (let i = 0; i < array.length; i++) {
 
-let manolo = [[],[],[],[],[]];
+    arrayFC[i] = new Array(4);
 
-for (let x = 0; x < 5; x++) {
-
-    for (let y = 0; y < 5; y++) {
-
-        // console.log(manolo);
-
-        aleatoryNumber = parseInt(Math.random()*10)
-
-        // console.log(manolo[x][y] = aleatoryNumber);
+    for (let y = 0; y < array.length; y++) {
         
+        arrayFC[i][y] = parseInt(Math.random()*10);
+
     }
+    
 }
 
 //***********//
